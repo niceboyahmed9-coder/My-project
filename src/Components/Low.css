@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    background-color: #00a2ed;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 24px;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.search-container {
+    position: relative;
+    flex: 0 1 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+.mic-icon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    fontSize: 16px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #00a2ed;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.Cart-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 7px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Products Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.product-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+                    /* This is a css for hero banner */
+
+.hero-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0; /* Removes any inner spacing */
+    box-sizing: border-box;
+}
+
+/* Main Bank Offer Banner */
+.main-banner {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+}
+
+.banner-content h1 {
+    font-size: 32px;
+    color: #222222;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.bank-highlight {
+    color: #004d80;
+}
+
+.badge-box {
+    display: inline-block;
+    background-color: #1a5c80;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Credit Card Graphics Representation */
+.banner-image-area {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.card-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cc {
+    position: absolute;
+    width: 140px;
+    height: 90px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card-1 { background: #111; right: 0px; top: 10px; z-index: 4; transform: rotate(-5deg); }
+.card-2 { background: #1a6091; right: 40px; top: 20px; z-index: 3; transform: rotate(0deg); }
+.card-3 { background: #4a90e2; right: 80px; top: 30px; z-index: 2; transform: rotate(5deg); }
+.card-4 { background: #d4af37; right: 120px; top: 40px; z-index: 1; transform: rotate(10deg); }
+
+/* Slider Arrows */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow { left: 15px; }
+.right-arrow { right: 15px; }
+
+/* Purple Asli Warranty Challenge Banner */
+.purple-promo-banner {
+    background: linear-gradient(135deg, #7b2cbf 0%, #5a189a 100%);
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 0 4px 12px rgba(123, 44, 191, 0.2);
+}
+
+.promo-title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.shield-icon {
+    font-size: 28px;
+}
+
+.promo-title-row h2 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.promo-text-area p {
+    margin: 0;
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.promo-image-area {
+    width: 120px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 220px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 1000;
+}
+.dropdown-link { padding: 10px 20px; color: #333; text-decoration: none; font-size: 15px; }
+.dropdown-link:hover { background-color: #f0f0f0; color: #00a2ed; }
+
+
+
+/* Additional Hero Banners */
+.extra-banners-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.promo-banner-secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 50px 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.promo-banner-tertiary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 50px 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner-text-side h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.banner-text-side p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.banner-action-btn {
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.banner-action-btn:hover {
+    background-color: #f1f5f9;
+}
+
+
+.promo-banner-quaternary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 50px 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- "Products to Die For" Hero Banner Styles --- */
+.die-for-banner-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 18px;
+}
+
+.hero-banner-die-for {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #09090b 0%, #27272a 100%);
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 45px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.banner-tag {
+    background: rgba(244, 63, 94, 0.15);
+    color: #fb7185;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    display: inline-block;
+    margin-bottom: 14px;
+    border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+.banner-content-box h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, #ffffff, #fda4af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-content-box p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 0 0 24px 0;
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+.banner-cta-btn {
+    background: linear-gradient(135deg, #f43f5e, #e11d48);
+    color: #ffffff;
+    padding: 12px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
+}
+
+.banner-cta-btn:hover {
+    background: linear-gradient(135deg, #e11d48, #be123c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.6);
+}
+
+.banner-icon-badge {
+    width: 90px;
+    height: 90px;
+    background: rgba(244, 63, 94, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    border: 1px solid rgba(244, 63, 94, 0.2);
+    box-shadow: 0 0 30px rgba(244, 63, 94, 0.2);
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .hero-banner-die-for {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+    
+    .banner-content-box p {
+        margin: 0 auto 20px auto;
+    }
+}
